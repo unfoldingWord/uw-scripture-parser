@@ -1,4 +1,4 @@
-import { getParsedUSFM } from "../src";
+import { getParsedUSFM, getVerseStringFromRef } from "../src/index.js";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "url";
@@ -15,5 +15,7 @@ const usfm = fs.readFileSync(
   "utf8"
 );
 
-const bibleObject = getParsedUSFM(usfm);
-console.log(bibleObject);
+const book = getParsedUSFM(usfm).chapters;
+
+const verseString = getVerseStringFromRef({ book, ref: "1:1-5" });
+console.log(verseString);

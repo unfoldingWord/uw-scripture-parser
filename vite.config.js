@@ -29,6 +29,6 @@ export default defineConfig({
       // External packages that should not be bundled into your library.
       external: ["usfm-js"],
     },
-    minify: false,
+    minify: true,
   },
 });

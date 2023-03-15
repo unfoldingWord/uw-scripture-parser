@@ -9,6 +9,7 @@ specifiers:
   react-dom: ^18.2.0
   react-scripts: ^5.0.1
   react-styleguidist: ^13.1.1
+  usfm-js: ^3.4.2
   vite: ^4.1.4
   webpack-cli: ^4.10.0
 
@@ -23,6 +24,7 @@ devDependencies:
   react-dom: 18.2.0_react@18.2.0
   react-scripts: 5.0.1_nudbwrmz3vd4eavmzfljpxmd7m
   react-styleguidist: 13.1.1_wxiwbfmovf6vcfanvq5il2dhou
+  usfm-js: 3.4.2
   vite: 4.1.4
   webpack-cli: 4.10.0
 
@@ -7583,6 +7585,10 @@ packages:
       p-locate: 5.0.0
     dev: true
 
+  /lodash.clonedeep/4.5.0:
+    resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
+    dev: true
+
   /lodash.debounce/4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
     dev: true
@@ -11067,6 +11073,12 @@ packages:
     dependencies:
       querystringify: 2.2.0
       requires-port: 1.0.0
+    dev: true
+
+  /usfm-js/3.4.2:
+    resolution: {integrity: sha512-i5nGxGwFhkOWd7xgfVWQ6GTkCpksfy5AUIwNJcwanTn3ua5J1nwl3pjApCDA6x1B++8ICkcQMUt0FB/bkKdE2g==}
+    dependencies:
+      lodash.clonedeep: 4.5.0
     dev: true
 
   /util-deprecate/1.0.2:
