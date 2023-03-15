@@ -1,7 +1,7 @@
 {
-  "name": "my-lib",
-  "description": "A React Component Library.",
-  "version": "0.0.0",
+  "name": "uw-bible-parser",
+  "description": "Parse uw usfm bibles.",
+  "version": "0.0.1-beta.1",
   "homepage": "",
   "license": "MIT",
   "repository": {
@@ -20,6 +20,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
     "react-styleguidist": "^13.1.1",
+    "vite": "^4.1.4",
     "webpack-cli": "^4.10.0"
   },
   "scripts": {
@@ -29,10 +30,17 @@
     "sections": "node styleguide.sections.js"
   },
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"]
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -40,10 +48,15 @@
     ]
   },
   "main": "dist/index.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "browser": {
     "fs": false,
     "os": false,
     "path": false
+  },
+  "dependencies": {
+    "bible-reference-range": "^1.1.0"
   }
 }
