@@ -33,7 +33,8 @@
     "build": "vite build",
     "test": "react-scripts test",
     "sections": "node styleguide.sections.js",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "prepublishOnly": "yarn build"
   },
   "eslintConfig": {
     "extends": [
